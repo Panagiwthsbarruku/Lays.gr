@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Honk&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,475;1,475&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcbc0d; /* Αρχικό χρώμα φόντου */
+    background-image: radial-gradient(circle, #fcbc0d, #f0e68c); /* Προσθήκη radial gradient */
+    transition: background-color 0.5s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff00;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+     color: #eeeeee;
+     font-family: 'Roboto',sans-serif;
+      cursor: pointer;
+      display: inline-flex;
+}
+.logo img{
+    border-radius: 60pc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+ nav ul li a:hover{
+     background-color: #fcbc0d;
+     padding: 10px;
+border-radius: 5px;
+ }
+
+.search {
+    font-size: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 400px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.hero-content p {
+    margin-bottom: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.hero-content button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-content button:hover{
+background-color: #fcbc0d;
+ cursor: pointer;
+ font-family: 'Roboto',sans-serif;
+}
+
+.hero-image img {
+    max-width: 300px;
+    margin-left: 50px;
+}
+
+.side-images {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.side-images img {
+    max-width: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.side-images img:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* ... (Προηγούμενο CSS) ... */
+
+@media (max-width: 768px) {
+    /* Προσαρμογές για κινητά */
+
+    .hero {
+        flex-direction: column; /* Αλλαγή σε κάθετη διάταξη */
+        align-items: center; /* Κεντράρισμα στοιχείων */
+        padding: 20px; /* Μείωση padding */
+    }
+
+    .hero-content {
+        text-align: center; /* Κεντράρισμα κειμένου */
+        max-width: 100%; /* Πλήρες πλάτος */
+    }
+
+    .hero-image img {
+        margin-left: 0; /* Αφαίρεση περιθωρίου */
+        max-width: 100%; /* Πλήρες πλάτος */
+    }
+
+    .side-images {
+        flex-direction: row; /* Αλλαγή σε οριζόντια διάταξη */
+        margin-left: 0; /* Αφαίρεση περιθωρίου */
+        justify-content: center; /* Κεντράρισμα εικόνων */
+        flex-wrap: wrap; /* Επιστροφή σε νέα γραμμή αν δεν χωράνε */
+    }
+
+    .side-images img {
+        max-width: 60px; /* Μείωση μεγέθους εικόνων */
+        margin: 5px; /* Μείωση περιθωρίου */
+    }
+
+    nav ul {
+        flex-direction: column; /* Αλλαγή σε κάθετη διάταξη */
+        align-items: center; /* Κεντράρισμα στοιχείων */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Μείωση περιθωρίου */
+    }
+}
